@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="{% static 'img/logo2.png' %}" type="image/x-icon" />
+    <title>Регистрация</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <div class="logo">
+            <a href="{% url 'index' %}"
+              ><img class="logotype" src="{% static 'img/logo2.png' %}" alt="Ooops"
+            /></a>
+          </div>
+          <div class="heading">
+            <h1>Добро пожаловать на страницу регистрации!</h1>
+          </div>
+          <div class="lang">
+            <a href="" class="langlink">KZ</a>
+            <a href="" class="langlink">RU</a>
+            <a href="" class="langlink">ENG</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% block mainmenu %}
+
+
+
+    {% endblock mainmenu %}
+  <footer class="footer">
+      <div class="footer_info">
+        <div>
+          <p class="creators">Powered by Apolon</p>
+        </div>
+        <div>
+          <a href="#" class="creators_logo"
+            ><img src="{% static 'img/turtlelogo.png' %}" width="30px" height="21px" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
