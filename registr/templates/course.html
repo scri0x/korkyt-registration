@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block mainmenu %}
+    <div class="content">
+      <div class="container">
+        <div class="form_box">
+          <form action="" class="form">
+            <div class="input_data">
+              <div class="course input_gap">
+                <label for="">Курс / Класс:</label>
+                <br />
+                <input type="number" min="1" max="12" class="input_settings" />
+              </div>
+            </div>
+            <div class="continue">
+              <button formaction="{% url 'last' %}" class="continue_but">
+                Завершить
+              </button>
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock mainmenu %}

@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{% block mainmenu %}
+    <div class="content">
+      <div class="container">
+        <div class="form_box">
+          <form action="" class="form">
+            <div class="input_data">
+              <div class="edu input_gap">
+                <select name="edu_inst" id="edu_inst" class="input_settings">
+                  <option name="school">Школа</option>
+                  <option name="university">Университет</option>
+                </select>
+              </div>
+
+              <div class="edu input_gap">
+                <label for="">Название (Шк/Универ):</label>
+                <br />
+                <input type="text" class="input_settings" />
+              </div>
+            </div>
+            <div class="continue">
+              <button formaction="{% url 'course' %}" class="continue_but">
+                Продолжить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+{% endblock mainmenu %}

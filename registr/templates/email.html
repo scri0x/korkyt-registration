@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+{% block mainmenu %}
+    <div class="content">
+      <div class="container">
+        <div class="form_box">
+          <form action="" class="form">
+            <div class="input_data">
+              <div class="email input_gap">
+                <label for="email">E-mail:</label>
+                <br />
+                <input type="email" class="input_settings" />
+              </div>
+
+              <div class="phone input_gap">
+                <label for="phone">Hомер телефона:</label>
+                <br />
+                <input
+                  type="tel"
+                  class="input_settings"
+                  pattern="[7-8]{1}[7]{1}[0-9]{9}"
+                />
+              </div>
+            </div>
+            <div class="continue">
+              <button formaction="{% url 'edu' %}" class="continue_but">
+                Продолжить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+{% endblock mainmenu %}
+

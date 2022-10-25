@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block mainmenu %}
+<body>
+    <div class="content">
+      <div class="container">
+        <div class="form_box">
+          <form action="" class="form">
+            <div class="input_data">
+              <div class="name input_gap">
+                <label for="name">Имя:</label>
+                <br />
+                <input type="text" class="input_settings" />
+              </div>
+
+              <div class="surname input_gap">
+                <label for="surname">Фамилия:</label>
+                <br />
+                <input type="text" class="input_settings" />
+              </div>
+            </div>
+            <div class="continue">
+              <button formaction="{% url 'email' %}" class="continue_but">
+                Продолжить
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </body>
+{% endblock mainmenu %}
+
